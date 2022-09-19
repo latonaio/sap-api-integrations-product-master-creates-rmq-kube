@@ -47,9 +47,9 @@ spec:
             - name: "RMQ_PORT"
               value: "32094"
             - name: "RMQ_QUEUE_FROM"
-              value: "sap-api-integrations-product-master-creates-queue"
+              value: "sap-api-integrations-product-master-creates-queue-from"
             - name: "RMQ_QUEUE_TO"
-              value: "product-master-out"
+              value: "data-platform-sql-updates-rmq-kube"
             - name: "RMQ_VHOST"
               value: "sap"
           resources:

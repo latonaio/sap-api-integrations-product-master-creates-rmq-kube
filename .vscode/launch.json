@@ -21,8 +21,8 @@
                 "RMQ_PASS": "XXXXXXXXXXXXXX",
                 "RMQ_ADDRESS": "XX.XXX.XXX.XXX",
                 "RMQ_PORT": "32094",
-                "RMQ_QUEUE_FROM": "sap-api-integlations-product-master-creates-queue",
-                "RMQ_QUEUE_TO": "product-master-out",
+                "RMQ_QUEUE_FROM": "sap-api-integlations-product-master-creates-queue-from",
+                "RMQ_QUEUE_TO": "sap-api-integlations-product-master-creates-queue-to",
                 "RMQ_VHOST": "sap"
             }
         }
