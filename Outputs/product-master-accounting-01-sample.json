@@ -1,9 +1,9 @@
 {
-	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-product-master-creates/SAP_API_Caller/caller.go#L306",
-	"function": "sap-api-integrations-product-master-creates/SAP_API_Caller.(*SAPAPICaller).Accounting",
+	"cursor": "/go/src/github.com/latonaio/SAP_API_Caller/caller.go#L349",
+	"function": "sap-api-integrations-product-master-creates-rmq-kube/SAP_API_Caller.(*SAPAPICaller).Accounting",
 	"level": "INFO",
 	"message": {
-		"Product": "21",
+		"Product": "72",
 		"ValuationArea": "0001",
 		"ValuationClass": "7920",
 		"StandardPrice": "1000.00",
@@ -13,5 +13,5 @@
 		"PlannedPrice": "0.00",
 		"IsMarkedForDeletion": false
 	},
-	"time": "2022-09-08T11:49:39+09:00"
+	"time": "2022-09-20T06:46:23Z"
 }

@@ -1,11 +1,11 @@
 {
-	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-product-master-creates/SAP_API_Caller/caller.go#L370",
-	"function": "sap-api-integrations-product-master-creates/SAP_API_Caller.(*SAPAPICaller).ProductDesc",
+	"cursor": "/go/src/github.com/latonaio/SAP_API_Caller/caller.go#L423",
+	"function": "sap-api-integrations-product-master-creates-rmq-kube/SAP_API_Caller.(*SAPAPICaller).ProductDesc",
 	"level": "INFO",
 	"message": {
-		"Product": "21",
+		"Product": "72",
 		"Language": "EN",
 		"ProductDescription": "Invoice"
 	},
-	"time": "2022-09-08T10:53:28+09:00"
+	"time": "2022-09-20T06:47:28Z"
 }

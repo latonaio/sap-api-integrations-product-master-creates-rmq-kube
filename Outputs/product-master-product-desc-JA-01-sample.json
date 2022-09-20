@@ -1,11 +1,11 @@
 {
-	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-product-master-creates/SAP_API_Caller/caller.go#L370",
-	"function": "sap-api-integrations-product-master-creates/SAP_API_Caller.(*SAPAPICaller).ProductDesc",
+	"cursor": "/go/src/github.com/latonaio/SAP_API_Caller/caller.go#L423",
+	"function": "sap-api-integrations-product-master-creates-rmq-kube/SAP_API_Caller.(*SAPAPICaller).ProductDesc",
 	"level": "INFO",
 	"message": {
-		"Product": "21",
+		"Product": "72",
 		"Language": "JA",
 		"ProductDescription": "請求"
 	},
-	"time": "2022-09-08T10:45:33+09:00"
+	"time": "2022-09-20T06:48:16Z"
 }

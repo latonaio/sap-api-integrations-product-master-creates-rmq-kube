@@ -1,9 +1,9 @@
 {
-	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-product-master-creates/SAP_API_Caller/caller.go#L402",
-	"function": "sap-api-integrations-product-master-creates/SAP_API_Caller.(*SAPAPICaller).Quality",
+	"cursor": "/go/src/github.com/latonaio/SAP_API_Caller/caller.go#L460",
+	"function": "sap-api-integrations-product-master-creates-rmq-kube/SAP_API_Caller.(*SAPAPICaller).Quality",
 	"level": "INFO",
 	"message": {
-		"Product": "21",
+		"Product": "72",
 		"Plant": "0001",
 		"MaximumStoragePeriod": "0",
 		"QualityMgmtCtrlKey": "",
@@ -14,5 +14,5 @@
 		"RecrrgInspIntervalTimeInDays": "0",
 		"ProductQualityCertificateType": ""
 	},
-	"time": "2022-09-08T10:32:36+09:00"
+	"time": "2022-09-20T06:35:34Z"
 }
