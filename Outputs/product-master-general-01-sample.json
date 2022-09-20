@@ -3,7 +3,7 @@
 	"function": "sap-api-integrations-product-master-creates-rmq-kube/SAP_API_Caller.(*SAPAPICaller).General",
 	"level": "INFO",
 	"message": {
-		"Product": "55",
+		"Product": "68",
 		"IndustrySector": "M",
 		"ProductType": "FERT",
 		"BaseUnit": "PC",
@@ -25,5 +25,5 @@
 			"ProductDescription": "test"
 		}
 	},
-	"time": "2022-09-13T05:21:43Z"
+	"time": "2022-09-20T03:02:22Z"
 }
