@@ -49,7 +49,7 @@ spec:
             - name: "RMQ_QUEUE_FROM"
               value: "sap-api-integrations-product-master-creates-queue-from"
             - name: "RMQ_QUEUE_TO"
-              value: "data-platform-sql-updates-rmq-kube"
+              value: "sap-api-integrations-product-master-creates-queue-to"
             - name: "RMQ_VHOST"
               value: "sap"
           resources:
