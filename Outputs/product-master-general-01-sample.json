@@ -3,13 +3,13 @@
 	"function": "sap-api-integrations-product-master-creates-rmq-kube/SAP_API_Caller.(*SAPAPICaller).General",
 	"level": "INFO",
 	"message": {
-		"Product": "68",
+		"Product": "72",
 		"IndustrySector": "M",
 		"ProductType": "FERT",
 		"BaseUnit": "PC",
-		"ValidityStartDate": "2022-01-25",
+		"ValidityStartDate": "2022-09-10",
 		"ProductGroup": "01",
-		"Division": "",
+		"Division": "01",
 		"GrossWeight": "1.000",
 		"WeightUnit": "KG",
 		"SizeOrDimensionText": "",
@@ -25,5 +25,5 @@
 			"ProductDescription": "test"
 		}
 	},
-	"time": "2022-09-20T03:02:22Z"
+	"time": "2022-09-20T06:24:00Z"
 }

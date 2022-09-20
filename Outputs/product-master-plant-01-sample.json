@@ -1,9 +1,9 @@
 {
-	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-product-master-creates/SAP_API_Caller/caller.go#L146",
-	"function": "sap-api-integrations-product-master-creates/SAP_API_Caller.(*SAPAPICaller).Plant",
+	"cursor": "/go/src/github.com/latonaio/SAP_API_Caller/caller.go#L164",
+	"function": "sap-api-integrations-product-master-creates-rmq-kube/SAP_API_Caller.(*SAPAPICaller).Plant",
 	"level": "INFO",
 	"message": {
-		"Product": "21",
+		"Product": "72",
 		"Plant": "0001",
 		"PurchasingGroup": "001",
 		"ProductionInvtryManagedLoc": "0001",
@@ -23,5 +23,5 @@
 		"ProductLogisticsHandlingGroup": "",
 		"IsMarkedForDeletion": false
 	},
-	"time": "2022-09-06T18:56:29+09:00"
+	"time": "2022-09-20T06:32:41Z"
 }
