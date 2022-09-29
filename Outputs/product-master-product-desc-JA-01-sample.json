@@ -3,9 +3,9 @@
 	"function": "sap-api-integrations-product-master-creates-rmq-kube/SAP_API_Caller.(*SAPAPICaller).ProductDesc",
 	"level": "INFO",
 	"message": {
-		"Product": "72",
+		"Product": "81",
 		"Language": "JA",
 		"ProductDescription": "請求"
 	},
-	"time": "2022-09-20T06:48:16Z"
+	"time": "2022-09-29T07:20:49Z"
 }

@@ -3,7 +3,7 @@
 	"function": "sap-api-integrations-product-master-creates-rmq-kube/SAP_API_Caller.(*SAPAPICaller).SalesOrganization",
 	"level": "INFO",
 	"message": {
-		"Product": "72",
+		"Product": "81",
 		"ProductSalesOrg": "0001",
 		"ProductDistributionChnl": "01",
 		"SupplyingPlant": "",
@@ -14,5 +14,5 @@
 		"ProductHierarchy": "",
 		"IsMarkedForDeletion": false
 	},
-	"time": "2022-09-20T06:43:52Z"
+	"time": "2022-09-29T07:22:59Z"
 }

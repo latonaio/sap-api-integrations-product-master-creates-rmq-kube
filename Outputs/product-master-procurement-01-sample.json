@@ -3,10 +3,10 @@
 	"function": "sap-api-integrations-product-master-creates-rmq-kube/SAP_API_Caller.(*SAPAPICaller).Procurement",
 	"level": "INFO",
 	"message": {
-		"Product": "72",
+		"Product": "81",
 		"Plant": "0001",
 		"IsAutoPurOrdCreationAllowed": true,
 		"IsSourceListRequired": true
 	},
-	"time": "2022-09-20T06:33:51Z"
+	"time": "2022-09-29T07:11:20Z"
 }

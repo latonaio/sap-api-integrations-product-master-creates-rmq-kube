@@ -3,7 +3,7 @@
 	"function": "sap-api-integrations-product-master-creates-rmq-kube/SAP_API_Caller.(*SAPAPICaller).WorkScheduling",
 	"level": "INFO",
 	"message": {
-		"Product": "72",
+		"Product": "81",
 		"Plant": "0001",
 		"ProductionInvtryManagedLoc": "0001",
 		"ProductProcessingTime": "0.00",
@@ -13,5 +13,5 @@
 		"MatlCompIsMarkedForBackflush": "",
 		"ProductionSchedulingProfile": ""
 	},
-	"time": "2022-09-20T06:45:18Z"
+	"time": "2022-09-29T07:31:53Z"
 }

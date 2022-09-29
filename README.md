@@ -186,15 +186,15 @@ func (c *SAPAPICaller) AsyncPostProductMaster(
 
 ```
 {
-	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-product-master-creates/SAP_API_Caller/caller.go#L113",
-	"function": "sap-api-integrations-product-master-creates/SAP_API_Caller.(*SAPAPICaller).General",
+	"cursor": "/go/src/github.com/latonaio/SAP_API_Caller/caller.go#L126",
+	"function": "sap-api-integrations-product-master-creates-rmq-kube/SAP_API_Caller.(*SAPAPICaller).General",
 	"level": "INFO",
 	"message": {
-		"Product": "34",
+		"Product": "81",
 		"IndustrySector": "M",
 		"ProductType": "FERT",
 		"BaseUnit": "PC",
-		"ValidityStartDate": "2022-01-25T09:00:00+09:00",
+		"ValidityStartDate": "2022-01-25",
 		"ProductGroup": "01",
 		"Division": "",
 		"GrossWeight": "1.000",
@@ -212,6 +212,7 @@ func (c *SAPAPICaller) AsyncPostProductMaster(
 			"ProductDescription": "test"
 		}
 	},
-	"time": "2022-09-06T18:50:30+09:00"
+	"time": "2022-09-29T07:04:23Z"
 }
+
 ```

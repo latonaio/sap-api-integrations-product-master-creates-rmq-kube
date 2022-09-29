@@ -3,7 +3,7 @@
 	"function": "sap-api-integrations-product-master-creates-rmq-kube/SAP_API_Caller.(*SAPAPICaller).Quality",
 	"level": "INFO",
 	"message": {
-		"Product": "72",
+		"Product": "81",
 		"Plant": "0001",
 		"MaximumStoragePeriod": "0",
 		"QualityMgmtCtrlKey": "",
@@ -14,5 +14,5 @@
 		"RecrrgInspIntervalTimeInDays": "0",
 		"ProductQualityCertificateType": ""
 	},
-	"time": "2022-09-20T06:35:34Z"
+	"time": "2022-09-29T07:12:40Z"
 }
