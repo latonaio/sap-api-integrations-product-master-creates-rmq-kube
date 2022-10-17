@@ -8,7 +8,7 @@ import (
 	"golang.org/x/xerrors"
 )
 
-func ConvertToGeneral(raw []byte, l *logger.Logger) (*General, error) {
+func ConvertToGeneral(raw []byte, l *logger.Logger) ([]General, error) {
 	pm := &responses.General{}
 	err := json.Unmarshal(raw, pm)
 	if err != nil {
@@ -16,7 +16,7 @@ func ConvertToGeneral(raw []byte, l *logger.Logger) (*General, error) {
 	}
 	data := pm.D
 
-	general := &General{
+	general := General{
 		Product:             data.Product,
 		IndustrySector:      data.IndustrySector,
 		ProductType:         data.ProductType,
@@ -36,17 +36,17 @@ func ConvertToGeneral(raw []byte, l *logger.Logger) (*General, error) {
 		ToProductDesc:       data.ToProductDesc.ToProductDescResults[0],
 	}
 
-	return general, nil
+	return []General{general}, nil
 }
 
-func ConvertToPlant(raw []byte, l *logger.Logger) (*Plant, error) {
+func ConvertToPlant(raw []byte, l *logger.Logger) ([]Plant, error) {
 	p := &responses.Plant{}
 	err := json.Unmarshal(raw, p)
 	if err != nil {
 		return nil, xerrors.Errorf("cannot convert to Plant. raw data is:\n%v\nunmarshal error: %w", string(raw), err)
 	}
 	data := p.D
-	plant := &Plant{
+	plant := Plant{
 		Product:                       data.Product,
 		Plant:                         data.Plant,
 		PurchasingGroup:               data.PurchasingGroup,
@@ -68,17 +68,17 @@ func ConvertToPlant(raw []byte, l *logger.Logger) (*Plant, error) {
 		IsMarkedForDeletion:           data.IsMarkedForDeletion,
 	}
 
-	return plant, nil
+	return []Plant{plant}, nil
 }
 
-func ConvertToMRPArea(raw []byte, l *logger.Logger) (*MRPArea, error) {
+func ConvertToMRPArea(raw []byte, l *logger.Logger) ([]MRPArea, error) {
 	p := &responses.MRPArea{}
 	err := json.Unmarshal(raw, p)
 	if err != nil {
 		return nil, xerrors.Errorf("cannot convert to MRPArea. raw data is:\n%v\nunmarshal error: %w", string(raw), err)
 	}
 	data := p.D
-	mrpArea := &MRPArea{
+	mrpArea := MRPArea{
 		Product:                       data.Product,
 		Plant:                         data.Plant,
 		MRPArea:                       data.MRPArea,
@@ -103,34 +103,34 @@ func ConvertToMRPArea(raw []byte, l *logger.Logger) (*MRPArea, error) {
 		IsMarkedForDeletion:           data.IsMarkedForDeletion,
 	}
 
-	return mrpArea, nil
+	return []MRPArea{mrpArea}, nil
 }
 
-func ConvertToProcurement(raw []byte, l *logger.Logger) (*Procurement, error) {
+func ConvertToProcurement(raw []byte, l *logger.Logger) ([]Procurement, error) {
 	p := &responses.Procurement{}
 	err := json.Unmarshal(raw, p)
 	if err != nil {
 		return nil, xerrors.Errorf("cannot convert to Procurement. raw data is:\n%v\nunmarshal error: %w", string(raw), err)
 	}
 	data := p.D
-	procurement := &Procurement{
+	procurement := Procurement{
 		Product:                     data.Product,
 		Plant:                       data.Plant,
 		IsAutoPurOrdCreationAllowed: data.IsAutoPurOrdCreationAllowed,
 		IsSourceListRequired:        data.IsSourceListRequired,
 	}
 
-	return procurement, nil
+	return []Procurement{procurement}, nil
 }
 
-func ConvertToWorkScheduling(raw []byte, l *logger.Logger) (*WorkScheduling, error) {
+func ConvertToWorkScheduling(raw []byte, l *logger.Logger) ([]WorkScheduling, error) {
 	p := &responses.WorkScheduling{}
 	err := json.Unmarshal(raw, p)
 	if err != nil {
 		return nil, xerrors.Errorf("cannot convert to WorkScheduling. raw data is:\n%v\nunmarshal error: %w", string(raw), err)
 	}
 	data := p.D
-	workScheduling := &WorkScheduling{
+	workScheduling := WorkScheduling{
 		Product:                       data.Product,
 		Plant:                         data.Plant,
 		ProductionInvtryManagedLoc:    data.ProductionInvtryManagedLoc,
@@ -142,34 +142,34 @@ func ConvertToWorkScheduling(raw []byte, l *logger.Logger) (*WorkScheduling, err
 		ProductionSchedulingProfile:   data.ProductionSchedulingProfile,
 	}
 
-	return workScheduling, nil
+	return []WorkScheduling{workScheduling}, nil
 }
 
-func ConvertToSalesPlant(raw []byte, l *logger.Logger) (*SalesPlant, error) {
+func ConvertToSalesPlant(raw []byte, l *logger.Logger) ([]SalesPlant, error) {
 	p := &responses.SalesPlant{}
 	err := json.Unmarshal(raw, p)
 	if err != nil {
 		return nil, xerrors.Errorf("cannot convert to SalesPlant. raw data is:\n%v\nunmarshal error: %w", string(raw), err)
 	}
 	data := p.D
-	salesPlant := &SalesPlant{
+	salesPlant := SalesPlant{
 		Product:               data.Product,
 		Plant:                 data.Plant,
 		LoadingGroup:          data.LoadingGroup,
 		AvailabilityCheckType: data.AvailabilityCheckType,
 	}
 
-	return salesPlant, nil
+	return []SalesPlant{salesPlant}, nil
 }
 
-func ConvertToAccounting(raw []byte, l *logger.Logger) (*Accounting, error) {
+func ConvertToAccounting(raw []byte, l *logger.Logger) ([]Accounting, error) {
 	p := &responses.Accounting{}
 	err := json.Unmarshal(raw, p)
 	if err != nil {
 		return nil, xerrors.Errorf("cannot convert to Accounting. raw data is:\n%v\nunmarshal error: %w", string(raw), err)
 	}
 	data := p.D
-	accounting := &Accounting{
+	accounting := Accounting{
 		Product:             data.Product,
 		ValuationArea:       data.ValuationArea,
 		ValuationClass:      data.ValuationClass,
@@ -181,17 +181,17 @@ func ConvertToAccounting(raw []byte, l *logger.Logger) (*Accounting, error) {
 		IsMarkedForDeletion: data.IsMarkedForDeletion,
 	}
 
-	return accounting, nil
+	return []Accounting{accounting}, nil
 }
 
-func ConvertToSalesOrganization(raw []byte, l *logger.Logger) (*SalesOrganization, error) {
+func ConvertToSalesOrganization(raw []byte, l *logger.Logger) ([]SalesOrganization, error) {
 	p := &responses.SalesOrganization{}
 	err := json.Unmarshal(raw, p)
 	if err != nil {
 		return nil, xerrors.Errorf("cannot convert to SalesOrganization. raw data is:\n%v\nunmarshal error: %w", string(raw), err)
 	}
 	data := p.D
-	salesOrganization := &SalesOrganization{
+	salesOrganization := SalesOrganization{
 		Product:                        data.Product,
 		ProductSalesOrg:                data.ProductSalesOrg,
 		ProductDistributionChnl:        data.ProductDistributionChnl,
@@ -204,33 +204,33 @@ func ConvertToSalesOrganization(raw []byte, l *logger.Logger) (*SalesOrganizatio
 		IsMarkedForDeletion:            data.IsMarkedForDeletion,
 	}
 
-	return salesOrganization, nil
+	return []SalesOrganization{salesOrganization}, nil
 }
 
-func ConvertToProductDesc(raw []byte, l *logger.Logger) (*ProductDesc, error) {
+func ConvertToProductDesc(raw []byte, l *logger.Logger) ([]ProductDesc, error) {
 	p := &responses.ProductDesc{}
 	err := json.Unmarshal(raw, p)
 	if err != nil {
 		return nil, xerrors.Errorf("cannot convert to ProductDesc. raw data is:\n%v\nunmarshal error: %w", string(raw), err)
 	}
 	data := p.D
-	productDesc := &ProductDesc{
+	productDesc := ProductDesc{
 		Product:            data.Product,
 		Language:           data.Language,
 		ProductDescription: data.ProductDescription,
 	}
 
-	return productDesc, nil
+	return []ProductDesc{productDesc}, nil
 }
 
-func ConvertToQuality(raw []byte, l *logger.Logger) (*Quality, error) {
+func ConvertToQuality(raw []byte, l *logger.Logger) ([]Quality, error) {
 	p := &responses.Quality{}
 	err := json.Unmarshal(raw, p)
 	if err != nil {
 		return nil, xerrors.Errorf("cannot convert to Quality. raw data is:\n%v\nunmarshal error: %w", string(raw), err)
 	}
 	data := p.D
-	quality := &Quality{
+	quality := Quality{
 		Product:                        data.Product,
 		Plant:                          data.Plant,
 		MaximumStoragePeriod:           data.MaximumStoragePeriod,
@@ -243,5 +243,5 @@ func ConvertToQuality(raw []byte, l *logger.Logger) (*Quality, error) {
 		ProductQualityCertificateType:  data.ProductQualityCertificateType,
 	}
 
-	return quality, nil
+	return []Quality{quality}, nil
 }

@@ -126,7 +126,7 @@ func (c *SAPAPICaller) General(general *requests.General) {
 	c.log.Info(generalData)
 }
 
-func (c *SAPAPICaller) callProductSrvAPIRequirementGeneral(api string, general *requests.General) (*sap_api_output_formatter.General, error) {
+func (c *SAPAPICaller) callProductSrvAPIRequirementGeneral(api string, general *requests.General) ([]sap_api_output_formatter.General, error) {
 	body, err := json.Marshal(general)
 	if err != nil {
 		return nil, xerrors.Errorf("API request error: %w", err)
@@ -164,7 +164,7 @@ func (c *SAPAPICaller) Plant(plant *requests.Plant) {
 	c.log.Info(outputDataPlant)
 }
 
-func (c *SAPAPICaller) callProductSrvAPIRequirementPlant(api string, plant *requests.Plant) (*sap_api_output_formatter.Plant, error) {
+func (c *SAPAPICaller) callProductSrvAPIRequirementPlant(api string, plant *requests.Plant) ([]sap_api_output_formatter.Plant, error) {
 	body, err := json.Marshal(plant)
 	if err != nil {
 		return nil, xerrors.Errorf("API request error: %w", err)
@@ -201,7 +201,7 @@ func (c *SAPAPICaller) MRPArea(mrpArea *requests.MRPArea) {
 	c.log.Info(outputDataMRPArea)
 }
 
-func (c *SAPAPICaller) callProductSrvAPIRequirementMRPArea(api string, mrpArea *requests.MRPArea) (*sap_api_output_formatter.MRPArea, error) {
+func (c *SAPAPICaller) callProductSrvAPIRequirementMRPArea(api string, mrpArea *requests.MRPArea) ([]sap_api_output_formatter.MRPArea, error) {
 	body, err := json.Marshal(mrpArea)
 	if err != nil {
 		return nil, xerrors.Errorf("API request error: %w", err)
@@ -238,7 +238,7 @@ func (c *SAPAPICaller) Procurement(procurement *requests.Procurement) {
 	c.log.Info(outputDataProcurement)
 }
 
-func (c *SAPAPICaller) callProductSrvAPIRequirementProcurement(api string, procurement *requests.Procurement) (*sap_api_output_formatter.Procurement, error) {
+func (c *SAPAPICaller) callProductSrvAPIRequirementProcurement(api string, procurement *requests.Procurement) ([]sap_api_output_formatter.Procurement, error) {
 	body, err := json.Marshal(procurement)
 	if err != nil {
 		return nil, xerrors.Errorf("API request error: %w", err)
@@ -275,7 +275,7 @@ func (c *SAPAPICaller) WorkScheduling(workScheduling *requests.WorkScheduling) {
 	c.log.Info(outputDataWorkScheduling)
 }
 
-func (c *SAPAPICaller) callProductSrvAPIRequirementWorkScheduling(api string, workScheduling *requests.WorkScheduling) (*sap_api_output_formatter.WorkScheduling, error) {
+func (c *SAPAPICaller) callProductSrvAPIRequirementWorkScheduling(api string, workScheduling *requests.WorkScheduling) ([]sap_api_output_formatter.WorkScheduling, error) {
 	body, err := json.Marshal(workScheduling)
 	if err != nil {
 		return nil, xerrors.Errorf("API request error: %w", err)
@@ -312,7 +312,7 @@ func (c *SAPAPICaller) SalesPlant(salesPlant *requests.SalesPlant) {
 	c.log.Info(outputDataSalesPlant)
 }
 
-func (c *SAPAPICaller) callProductSrvAPIRequirementSalesPlant(api string, salesPlant *requests.SalesPlant) (*sap_api_output_formatter.SalesPlant, error) {
+func (c *SAPAPICaller) callProductSrvAPIRequirementSalesPlant(api string, salesPlant *requests.SalesPlant) ([]sap_api_output_formatter.SalesPlant, error) {
 	body, err := json.Marshal(salesPlant)
 	if err != nil {
 		return nil, xerrors.Errorf("API request error: %w", err)
@@ -349,7 +349,7 @@ func (c *SAPAPICaller) Accounting(accounting *requests.Accounting) {
 	c.log.Info(outputDataAccounting)
 }
 
-func (c *SAPAPICaller) callProductSrvAPIRequirementAccounting(api string, accounting *requests.Accounting) (*sap_api_output_formatter.Accounting, error) {
+func (c *SAPAPICaller) callProductSrvAPIRequirementAccounting(api string, accounting *requests.Accounting) ([]sap_api_output_formatter.Accounting, error) {
 	body, err := json.Marshal(accounting)
 	if err != nil {
 		return nil, xerrors.Errorf("API request error: %w", err)
@@ -386,7 +386,7 @@ func (c *SAPAPICaller) SalesOrganization(salesOrganization *requests.SalesOrgani
 	c.log.Info(outputDataSalesOrganization)
 }
 
-func (c *SAPAPICaller) callProductSrvAPIRequirementSalesOrganization(api string, salesOrganization *requests.SalesOrganization) (*sap_api_output_formatter.SalesOrganization, error) {
+func (c *SAPAPICaller) callProductSrvAPIRequirementSalesOrganization(api string, salesOrganization *requests.SalesOrganization) ([]sap_api_output_formatter.SalesOrganization, error) {
 	body, err := json.Marshal(salesOrganization)
 	if err != nil {
 		return nil, xerrors.Errorf("API request error: %w", err)
@@ -423,7 +423,7 @@ func (c *SAPAPICaller) ProductDesc(productDesc *requests.ProductDesc) {
 	c.log.Info(outputDataProductDesc)
 }
 
-func (c *SAPAPICaller) callProductSrvAPIRequirementProductDesc(api string, productDesc *requests.ProductDesc) (*sap_api_output_formatter.ProductDesc, error) {
+func (c *SAPAPICaller) callProductSrvAPIRequirementProductDesc(api string, productDesc *requests.ProductDesc) ([]sap_api_output_formatter.ProductDesc, error) {
 	body, err := json.Marshal(productDesc)
 	if err != nil {
 		return nil, xerrors.Errorf("API request error: %w", err)
@@ -460,7 +460,7 @@ func (c *SAPAPICaller) Quality(quality *requests.Quality) {
 	c.log.Info(outputDataQuality)
 }
 
-func (c *SAPAPICaller) callProductSrvAPIRequirementQuality(api string, quality *requests.Quality) (*sap_api_output_formatter.Quality, error) {
+func (c *SAPAPICaller) callProductSrvAPIRequirementQuality(api string, quality *requests.Quality) ([]sap_api_output_formatter.Quality, error) {
 	body, err := json.Marshal(quality)
 	if err != nil {
 		return nil, xerrors.Errorf("API request error: %w", err)

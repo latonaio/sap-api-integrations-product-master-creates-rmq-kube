@@ -9,10 +9,12 @@ spec:
   selector:
     matchLabels:
       run: sap-api-integrations-product-master-creates-rmq-kube
+      app: SAP_PRODUCT_MASTER
   template:
     metadata:
       labels:
         run: sap-api-integrations-product-master-creates-rmq-kube
+        app: SAP_PRODUCT_MASTER
     spec:
       nodeName: worker
       hostname: sap-api-integrations-product-master-creates-rmq-kube
